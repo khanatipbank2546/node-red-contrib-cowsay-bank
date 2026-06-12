@@ -51,6 +51,108 @@
                                     "en-US": "WHALE"
                                 },
                                 "v": "whale"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "DRAGON"
+                                },
+                                "v": "dragon"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "DARTH VADER"
+                                },
+                                "v": "vader"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "TURTLE"
+                                },
+                                "v": "turtle"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "CHICKEN"
+                                },
+                                "v": "chicken"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "DUCK"
+                                },
+                                "v": "duck"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "ELEPHANT"
+                                },
+                                "v": "elephant"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "KOALA"
+                                },
+                                "v": "koala"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "SHEEP"
+                                },
+                                "v": "sheep"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "HELLO KITTY"
+                                },
+                                "v": "hellokitty"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "PENGUIN (TUX)"
+                                },
+                                "v": "tux"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "BLOWFISH"
+                                },
+                                "v": "blowfish"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "FROGS"
+                                },
+                                "v": "bud-frogs"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "DAEMON"
+                                },
+                                "v": "daemon"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "MOOSE"
+                                },
+                                "v": "moose"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "TURKEY"
+                                },
+                                "v": "turkey"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "SKELETON"
+                                },
+                                "v": "skeleton"
+                            },
+                            {
+                                "l": {
+                                    "en-US": "STEGOSAURUS"
+                                },
+                                "v": "stegosaurus"
                             }
                         ]
                     }
@@ -60,9 +162,9 @@
         "meta": {
             "module": "node-red-contrib-cowsay-bank",
             "type": "cowsay",
-            "version": "0.0.1",
+            "version": "0.0.6",
             "author": "Bank <khanatipbank@gmail.com>",
-            "desc": "A custom cowsay node by Bank",
+            "desc": "A fully-loaded custom cowsay node by Bank",
             "keywords": "node-red,cowsay",
             "license": "Apache-2.0"
         },
