@@ -58,7 +58,7 @@
             }
         ],
         "meta": {
-            "module": "node-red-contrib-cowsay-banj",
+            "module": "node-red-contrib-cowsay-bank",
             "type": "cowsay",
             "version": "0.0.1",
             "author": "Bank <khanatipbank@gmail.com>",
