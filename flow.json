@@ -2,7 +2,7 @@
     {
         "id": "f6d16c647fe9b2e0",
         "type": "subflow",
-        "name": "Cowsay2",
+        "name": "cowsay",
         "info": "",
         "category": "",
         "in": [
@@ -73,7 +73,7 @@
         "type": "function",
         "z": "f6d16c647fe9b2e0",
         "name": "function 4",
-        "func": "// 1. ดึงค่าสัตว์ที่คนใช้เลือกจากหน้า UI\nconst selectedAnimal = env.get(\"character\") || \"cow\";\n\n// 2. สร้างโครงสร้าง Options รอสแตนด์บายไว้\nlet options = {\n    text: String(msg.payload)\n};\n\n// 3. เงื่อนไขดักบั๊ก: ถ้าคนใช้เลือกวาฬ ให้พ่วง f: \"whale\" เข้าไปด้วย\n// แต่ถ้าเลือก cow (วัว) ให้ข้ามไปเลย ไม่ต้องพ่วง เพื่อปล่อยให้ระบบเสกวัวเริ่มต้นออกมาเองโดยไม่บั๊กครับ!\nif (selectedAnimal === \"whale\") {\n    options.f = \"whale\";\n}\n\n// 4. สั่งวาดภาพตาม Options ที่เซ็ตไว้\nmsg.payload = cowsay.say(options);\n\nreturn msg;",
+        "func": "const animal = env.get(\"character\");\n\nmsg.payload = cowsay.say({ text: String(msg.payload), f: animal === \"cow\" ? undefined : animal });\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -89,26 +89,6 @@
         "y": 80,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "3b131cb5c86798e4",
-        "type": "subflow:f6d16c647fe9b2e0",
-        "z": "93fb845b7bda4c53",
-        "name": "",
-        "env": [
-            {
-                "name": "character",
-                "value": "whale",
-                "type": "str"
-            }
-        ],
-        "x": 360,
-        "y": 560,
-        "wires": [
-            [
-                "2b7aabc96add4556"
-            ]
         ]
     }
 ]
